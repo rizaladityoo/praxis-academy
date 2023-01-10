@@ -1,0 +1,563 @@
+1. C:\Users\DWG>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter VirtualBox Host-Only Network:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::8323:fade:17f5:d214%8
+   IPv4 Address. . . . . . . . . . . : 10.10.10.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   IPv6 Address. . . . . . . . . . . : 2001:448a:3003:5a8d:1093:7ee4:546f:5c7e
+   Temporary IPv6 Address. . . . . . : 2001:448a:3003:5a8d:1184:862b:449c:117c
+   Link-local IPv6 Address . . . . . : fe80::f54:164:698c:1131%14
+   IPv4 Address. . . . . . . . . . . : 192.168.1.28
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::1000%14
+                                       192.168.1.1
+2. C:\Users\DWG>mkdir test
+
+3. C:\Users\DWG>Whoami
+desktop-plcmto1\dwg
+
+4. C:\Users\DWG>ping google.com
+
+Pinging google.com [2404:6800:4003:c06::64] with 32 bytes of data:
+Reply from 2404:6800:4003:c06::64: time=28ms
+Reply from 2404:6800:4003:c06::64: time=23ms
+Reply from 2404:6800:4003:c06::64: time=26ms
+Reply from 2404:6800:4003:c06::64: time=26ms
+
+Ping statistics for 2404:6800:4003:c06::64:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 23ms, Maximum = 28ms, Average = 25ms
+
+5. C:\Users\DWG>Systeminfo
+
+Host Name:                 DESKTOP-PLCMTO1
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.19044 N/A Build 19044
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          DWG
+Registered Organization:
+Product ID:                00330-80000-00000-AA717
+Original Install Date:     25/12/2021, 19.14.54
+System Boot Time:          09/01/2023, 09.27.14
+System Manufacturer:       Dell Inc.
+System Model:              Latitude E7240
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 69 Stepping 1 GenuineIntel ~2601 Mhz
+BIOS Version:              Dell Inc. A15, 19/05/2015
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume2
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+07:00) Bangkok, Hanoi, Jakarta
+Total Physical Memory:     8.097 MB
+Available Physical Memory: 1.705 MB
+Virtual Memory: Max Size:  9.377 MB
+Virtual Memory: Available: 1.215 MB
+Virtual Memory: In Use:    8.162 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\DESKTOP-PLCMTO1
+Hotfix(s):                 16 Hotfix(s) Installed.
+                           [01]: KB5020872
+                           [02]: KB4562830
+                           [03]: KB5003791
+                           [04]: KB5007401
+                           [05]: KB5012170
+                           [06]: KB5021233
+                           [07]: KB5007273
+                           [08]: KB5011352
+                           [09]: KB5011651
+                           [10]: KB5014032
+                           [11]: KB5014035
+                            [12]: KB5014671
+                           [13]: KB5015895
+                           [14]: KB5016705
+                           [15]: KB5018506
+                           [16]: KB5020372
+Network Card(s):           3 NIC(s) Installed.
+                           [01]: Intel(R) Ethernet Connection I218-LM
+                                 Connection Name: Ethernet
+                                 Status:          Media disconnected
+                           [02]: Intel(R) Dual Band Wireless-AC 7260
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.1.28
+                                 [02]: fe80::f54:164:698c:1131
+                                 [03]: 2001:448a:3003:5a8d:1184:862b:449c:117c
+                                 [04]: 2001:448a:3003:5a8d:1093:7ee4:546f:5c7e
+                           [03]: VirtualBox Host-Only Ethernet Adapter
+                                 Connection Name: VirtualBox Host-Only Network
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 10.10.10.1
+                                 [02]: fe80::8323:fade:17f5:d214
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+
+6. C:\Users\DWG>Hostname
+DESKTOP-PLCMTO1
+
+7. C:\Users\DWG>chdir test
+
+C:\Users\DWG\test>
+
+8. C:\Users\DWG\test>cd ..
+
+C:\Users\DWG>
+
+9. C:\Users\DWG>Tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0        152 K
+Secure System                   56 Services                   0     22.740 K
+Registry                       104 Services                   0     81.468 K
+smss.exe                       424 Services                   0      1.148 K
+csrss.exe                      516 Services                   0      4.584 K
+wininit.exe                    700 Services                   0      5.864 K
+csrss.exe                      708 Console                    1      5.800 K
+winlogon.exe                   804 Console                    1     11.356 K
+services.exe                   844 Services                   0      9.208 K
+LsaIso.exe                     872 Services                   0      2.740 K
+lsass.exe                      880 Services                   0     18.264 K
+svchost.exe                   1004 Services                   0     33.512 K
+fontdrvhost.exe                324 Console                    1      7.436 K
+fontdrvhost.exe                376 Services                   0      3.028 K
+svchost.exe                    564 Services                   0     16.780 K
+svchost.exe                    628 Services                   0      7.896 K
+dwm.exe                        932 Console                    1     61.484 K
+svchost.exe                   1140 Services                   0      5.036 K
+svchost.exe                   1184 Services                   0     10.216 K
+svchost.exe                   1208 Services                   0      4.892 K
+svchost.exe                   1216 Services                   0     11.520 K
+svchost.exe                   1300 Services                   0     15.272 K
+svchost.exe                   1324 Services                   0      6.060 K
+svchost.exe                   1336 Services                   0      5.696 K
+svchost.exe                   1380 Services                   0     13.268 K
+svchost.exe                   1468 Services                   0     15.216 K
+svchost.exe                   1512 Services                   0     18.492 K
+svchost.exe                   1660 Services                   0      9.188 K
+svchost.exe                   1728 Services                   0      6.628 K
+svchost.exe                   1740 Services                   0      7.232 K
+svchost.exe                   1768 Services                   0     13.996 K
+svchost.exe                   1776 Services                   0      5.560 K
+svchost.exe                   1812 Services                   0      7.344 K
+Memory Compression            1904 Services                   0    207.760 K
+svchost.exe                   1948 Services                   0      8.224 K
+svchost.exe                   2008 Services                   0     15.504 K
+igfxCUIService.exe               8 Services                   0      9.272 K
+svchost.exe                   1308 Services                   0     12.628 K
+svchost.exe                   2120 Services                   0      7.936 K
+svchost.exe                   2132 Services                   0      7.288 K
+svchost.exe                   2232 Services                   0      9.740 K
+svchost.exe                   2244 Services                   0     10.400 K
+svchost.exe                   2304 Services                   0     19.012 K
+svchost.exe                   2508 Services                   0     13.272 K
+svchost.exe                   2548 Services                   0      7.248 K
+svchost.exe                   2560 Services                   0     10.240 K
+RtkAudioService64.exe         2600 Services                   0      8.540 K
+svchost.exe                   2692 Services                   0      8.924 K
+svchost.exe                   2736 Services                   0      6.544 K
+svchost.exe                   2784 Services                   0      6.332 K
+svchost.exe                   2804 Services                   0      9.676 K
+svchost.exe                   2928 Services                   0     20.492 K
+svchost.exe                   3024 Services                   0     18.552 K
+svchost.exe                   2488 Services                   0     12.324 K
+svchost.exe                   3080 Services                   0      6.200 K
+spoolsv.exe                   3140 Services                   0     13.244 K
+svchost.exe                   3248 Services                   0      7.632 K
+HidMonitorSvc.exe             3344 Services                   0      4.844 K
+svchost.exe                   3352 Services                   0     13.872 K
+svchost.exe                   3360 Services                   0      6.228 K
+svchost.exe                   3368 Services                   0      8.796 K
+svchost.exe                   3396 Services                   0     29.460 K
+svchost.exe                   3428 Services                   0     46.800 K
+ibtsiva.exe                   3460 Services                   0      4.488 K
+svchost.exe                   3516 Services                   0     10.660 K
+svchost.exe                   3596 Services                   0      6.036 K
+pg_ctl.exe                    3608 Services                   0      5.464 K
+svchost.exe                   3660 Services                   0      7.932 K
+svchost.exe                   3680 Services                   0      5.348 K
+svchost.exe                   3696 Services                   0      8.088 K
+MsMpEng.exe                   3708 Services                   0    167.996 K
+svchost.exe                   3744 Services                   0     20.172 K
+svchost.exe                   3892 Services                   0      6.744 K
+dasHost.exe                   3912 Services                   0     15.348 K
+svchost.exe                   4032 Services                   0      5.072 K
+com.docker.service            4128 Services                   0     33.500 K
+svchost.exe                   4352 Services                   0     12.708 K
+svchost.exe                   4548 Services                   0      7.412 K
+Apoint.exe                    4588 Console                    1     15.392 K
+RAVBg64.exe                   4612 Console                    1     10.272 K
+postgres.exe                  4804 Services                   0     19.028 K
+sihost.exe                    4816 Console                    1     27.492 K
+conhost.exe                   4828 Services                   0      7.116 K
+svchost.exe                   4868 Console                    1     19.224 K
+PresentationFontCache.exe     5052 Services                   0     16.980 K
+svchost.exe                   4260 Console                    1     36.496 K
+svchost.exe                   4664 Services                   0     14.092 K
+taskhostw.exe                 4272 Console                    1     25.336 K
+taskhostw.exe                 4732 Console                    1     17.492 K
+svchost.exe                   5288 Services                   0      7.672 K
+postgres.exe                  5296 Services                   0      7.016 K
+ctfmon.exe                    5388 Console                    1     20.772 K
+svchost.exe                   5508 Services                   0      8.920 K
+svchost.exe                   5732 Services                   0     15.880 K
+explorer.exe                  5804 Console                    1    157.072 K
+ApMsgFwd.exe                  5820 Console                    1      6.396 K
+postgres.exe                  5908 Services                   0      7.148 K
+postgres.exe                  5916 Services                   0      8.256 K
+postgres.exe                  5924 Services                   0     11.216 K
+postgres.exe                  5932 Services                   0      7.852 K
+postgres.exe                  5940 Services                   0      7.280 K
+postgres.exe                  5948 Services                   0      7.484 K
+hidfind.exe                   6080 Console                    1      5.516 K
+ApntEx.exe                    6124 Console                    1      5.416 K
+conhost.exe                   4976 Console                    1      7.220 K
+igfxEM.exe                    5604 Console                    1     12.428 K
+igfxHK.exe                    5628 Console                    1      9.460 K
+igfxTray.exe                  5844 Console                    1     11.444 K
+svchost.exe                   6176 Services                   0      6.684 K
+svchost.exe                   6192 Services                   0      8.188 K
+svchost.exe                   6316 Services                   0      9.456 K
+svchost.exe                   6352 Console                    1     22.276 K
+StartMenuExperienceHost.e     6064 Console                    1     64.120 K
+RuntimeBroker.exe             2540 Console                    1     24.072 K
+svchost.exe                   6972 Services                   0      9.388 K
+SearchApp.exe                 7172 Console                    1     94.916 K
+SearchIndexer.exe             7252 Services                   0     50.100 K
+RuntimeBroker.exe             7568 Console                    1     44.692 K
+RuntimeBroker.exe             8784 Console                    1     18.360 K
+svchost.exe                   8972 Services                   0     18.652 K
+NisSrv.exe                    9096 Services                   0     10.228 K
+SecurityHealthSystray.exe     1924 Console                    1      9.216 K
+SecurityHealthService.exe     8524 Services                   0     14.312 K
+svchost.exe                   8896 Services                   0     10.776 K
+RAVBg64.exe                   4988 Console                    1     10.436 K
+OneDrive.exe                  9232 Console                    1     53.736 K
+Discord.exe                   9592 Console                    1     75.464 K
+steam.exe                     9612 Console                    1     75.540 K
+Discord.exe                   9732 Console                    1     25.136 K
+Discord.exe                   9828 Console                    1     88.716 K
+Discord.exe                   9872 Console                    1     40.212 K
+Discord.exe                  10232 Console                    1    239.932 K
+steamwebhelper.exe            9412 Console                    1     80.768 K
+steamservice.exe              9364 Services                   0      9.604 K
+RAVBg64.exe                   7456 Console                    1      7.468 K
+steamwebhelper.exe            1252 Console                    1     14.072 K
+svchost.exe                   9536 Services                   0     19.352 K
+steamwebhelper.exe            9448 Console                    1     60.504 K
+Cortana.exe                   9572 Console                    1     52.480 K
+steamwebhelper.exe           10112 Console                    1     27.184 K
+Lightshot.exe                10428 Console                    1     11.472 K
+RuntimeBroker.exe            10512 Console                    1     16.328 K
+svchost.exe                  10588 Services                   0     10.724 K
+svchost.exe                  10680 Console                    1     19.952 K
+svchost.exe                  10824 Services                   0     11.360 K
+Discord.exe                  11140 Console                    1     58.512 K
+steamwebhelper.exe            8748 Console                    1     62.000 K
+steamwebhelper.exe            7404 Console                    1     39.812 K
+steamwebhelper.exe            7860 Console                    1     84.452 K
+svchost.exe                   5816 Console                    1     18.676 K
+SgrmBroker.exe                8920 Services                   0      8.440 K
+svchost.exe                  10524 Services                   0     14.844 K
+svchost.exe                   3200 Services                   0      7.236 K
+svchost.exe                   8268 Services                   0      9.972 K
+ShellExperienceHost.exe       6536 Console                    1     44.024 K
+RuntimeBroker.exe             2420 Console                    1     22.708 K
+UserOOBEBroker.exe            3152 Console                    1      9.520 K
+Video.UI.exe                 10184 Console                    1      2.316 K
+RuntimeBroker.exe             1400 Console                    1      7.712 K
+Microsoft.Photos.exe          7248 Console                    1     18.656 K
+RuntimeBroker.exe             5856 Console                    1     32.672 K
+wpscenter.exe                 8320 Console                    1     36.292 K
+chrome.exe                   10040 Console                    1    381.152 K
+chrome.exe                    7052 Console                    1      7.524 K
+chrome.exe                    4444 Console                    1    318.388 K
+chrome.exe                     320 Console                    1     69.760 K
+chrome.exe                    4696 Console                    1     22.416 K
+chrome.exe                    4068 Console                    1     70.812 K
+chrome.exe                    1124 Console                    1     35.208 K
+chrome.exe                    6396 Console                    1     35.024 K
+chrome.exe                    3112 Console                    1     87.820 K
+TextInputHost.exe             3052 Console                    1     39.504 K
+chrome.exe                   11056 Console                    1     20.800 K
+chrome.exe                    8996 Console                    1    449.184 K
+dllhost.exe                   9028 Console                    1     12.340 K
+ApplicationFrameHost.exe     10264 Console                    1     28.964 K
+svchost.exe                   7704 Services                   0     14.444 K
+svchost.exe                   5956 Services                   0      9.584 K
+chrome.exe                    6816 Console                    1    189.032 K
+SystemSettings.exe            4060 Console                    1      1.576 K
+chrome.exe                    5756 Console                    1    119.340 K
+chrome.exe                    6300 Console                    1     67.756 K
+chrome.exe                    7284 Console                    1    131.872 K
+chrome.exe                    1056 Console                    1    141.400 K
+chrome.exe                    1036 Console                    1    221.144 K
+chrome.exe                    8720 Console                    1     88.952 K
+chrome.exe                    7036 Console                    1     51.048 K
+chrome.exe                   10488 Console                    1     77.896 K
+chrome.exe                    7812 Console                    1     90.080 K
+wpscloudsvr.exe               8956 Console                    1      5.488 K
+chrome.exe                    6632 Console                    1    198.216 K
+chrome.exe                    9272 Console                    1    150.080 K
+chrome.exe                    5036 Console                    1    153.952 K
+chrome.exe                    8456 Console                    1     56.536 K
+chrome.exe                    7916 Console                    1     62.116 K
+chrome.exe                    4292 Console                    1     45.636 K
+chrome.exe                     224 Console                    1     65.416 K
+chrome.exe                    2652 Console                    1     48.184 K
+chrome.exe                   12264 Console                    1     52.316 K
+chrome.exe                   10608 Console                    1     71.708 K
+chrome.exe                    5504 Console                    1     56.488 K
+chrome.exe                    4080 Console                    1     48.336 K
+chrome.exe                    5888 Console                    1     60.416 K
+chrome.exe                   11364 Console                    1     51.380 K
+chrome.exe                    2272 Console                    1     79.216 K
+chrome.exe                    1860 Console                    1     58.164 K
+chrome.exe                    7352 Console                    1     51.584 K
+chrome.exe                    7660 Console                    1     67.468 K
+chrome.exe                   12448 Console                    1     50.192 K
+chrome.exe                   12764 Console                    1     47.840 K
+chrome.exe                   12916 Console                    1     43.584 K
+chrome.exe                   12944 Console                    1     46.536 K
+chrome.exe                   13028 Console                    1     46.636 K
+chrome.exe                   13224 Console                    1     47.644 K
+chrome.exe                   13232 Console                    1    103.576 K
+chrome.exe                    6116 Console                    1     22.484 K
+chrome.exe                   11400 Console                    1    111.156 K
+chrome.exe                    5960 Console                    1    109.188 K
+chrome.exe                     892 Console                    1     65.144 K
+chrome.exe                    2796 Console                    1     41.788 K
+cmd.exe                       7832 Console                    1     15.092 K
+conhost.exe                   2144 Console                    1     20.196 K
+audiodg.exe                   2060 Services                   0     12.096 K
+chrome.exe                    8172 Console                    1    201.372 K
+chrome.exe                   11548 Console                    1     69.700 K
+chrome.exe                    8308 Console                    1     42.468 K
+chrome.exe                   12496 Console                    1     47.116 K
+notepad.exe                  12280 Console                    1     19.372 K
+chrome.exe                   11840 Console                    1    106.496 K
+chrome.exe                   11740 Console                    1     45.916 K
+chrome.exe                     228 Console                    1     46.376 K
+chrome.exe                    2388 Console                    1     44.524 K
+chrome.exe                   12668 Console                    1     44.308 K
+chrome.exe                   10016 Console                    1     42.664 K
+svchost.exe                   7616 Services                   0      9.812 K
+vds.exe                       9204 Services                   0     12.820 K
+svchost.exe                  12184 Services                   0      7.640 K
+svchost.exe                   3172 Services                   0     16.816 K
+tasklist.exe                  4428 Console                    1      9.148 K
+WmiPrvSE.exe                  4224 Services                   0      9.636 K
+
+10. C:\Users\DWG>Netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    192.168.1.28:49737     162.159.135.234:https  ESTABLISHED
+  TCP    192.168.1.28:55320     whatsapp-cdn-shv-03-xsp1:https  ESTABLISHED
+  TCP    192.168.1.28:55335     20.198.119.143:https   ESTABLISHED
+  TCP    192.168.1.28:55342     103-10-124-122:27035   ESTABLISHED
+  TCP    192.168.1.28:62624     ec2-13-58-108-216:https  ESTABLISHED
+  TCP    192.168.1.28:62721     ec2-3-130-185-128:https  ESTABLISHED
+  TCP    192.168.1.28:62729     52.184.204.244:https   ESTABLISHED
+  TCP    192.168.1.28:62756     ec2-3-130-185-128:https  ESTABLISHED
+  TCP    192.168.1.28:62758     a23-72-45-156:https    ESTABLISHED
+  TCP    192.168.1.28:62767     sl-in-f148:https       TIME_WAIT
+  TCP    192.168.1.28:62769     ec2-34-208-48-94:https  TIME_WAIT
+  TCP    192.168.1.28:62770     a104-111-165-65:https  ESTABLISHED
+  TCP    192.168.1.28:62772     a23-9-185-218:https    ESTABLISHED
+  TCP    192.168.1.28:62774     a23-36-253-206:https   ESTABLISHED
+  TCP    192.168.1.28:62775     a104-111-165-65:https  ESTABLISHED
+  TCP    192.168.1.28:62776     a-0005:https           ESTABLISHED
+  TCP    192.168.1.28:62778     151.101.2.137:https    ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:49739  instagram-p36-shv-01-xsp1:https  TIME_WAIT
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62240  se-in-f188:5228        ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62375  [2620:1ec:21::14]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62754  o2:https               TIME_WAIT
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62759  [2602:803:c002:300::76]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62760  [2602:803:c002:300::76]:https  TIME_WAIT
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62765  sf-in-f154:https       TIME_WAIT
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62777  o1:https               ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62779  instagram-p36-shv-02-xsp1:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62783  [2402:1f00:8001:580::]:https  CLOSE_WAIT
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62788  se-in-f95:https        ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62793  [2606:4700:10::6816:2d79]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62794  sa-in-x5e:https        ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62798  [2606:4700::6810:7baf]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62801  [2600:1901:0:4277::1]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62810  [2600:9000:2453:3600:8:48e:53c0:93a1]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62811  [2600:9000:2453:3600:8:48e:53c0:93a1]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62817  [2606:4700:10::6816:445]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62824  [2606:4700:20::ac43:49e4]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62847  [2606:4700:10::6816:3456]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62848  [2606:4700:10::6816:445]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62850  [2001:41d0:701:1000::31ee]:https  ESTABLISHED
+  TCP    [2001:448a:3003:5a8d:1184:862b:449c:117c]:62853  [2001:41d0:701:1000::31ee]:https  ESTABLISHED
+
+11. C:\Users\DWG>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 58CD-5FFB
+
+ Directory of C:\Users\DWG
+
+10/01/2023  00.27    <DIR>          .
+10/01/2023  00.27    <DIR>          ..
+26/07/2022  15.58    <DIR>          .aws
+26/07/2022  15.58    <DIR>          .azure
+26/07/2022  15.58    <DIR>          .docker
+11/10/2022  11.38                39 .gitconfig
+07/11/2022  09.38    <DIR>          .ipynb_checkpoints
+07/11/2022  09.39    <DIR>          .ipython
+07/11/2022  09.37    <DIR>          .jupyter
+07/11/2022  09.41    <DIR>          .matplotlib
+11/10/2022  11.54    <DIR>          .ssh
+15/09/2022  09.42    <DIR>          .VirtualBox
+05/07/2022  18.14    <DIR>          .vscode
+25/12/2021  19.15    <DIR>          3D Objects
+25/12/2021  19.15    <DIR>          Contacts
+09/01/2023  17.13    <DIR>          Desktop
+12/08/2022  17.29    <DIR>          Documents
+06/01/2023  08.49    <DIR>          Downloads
+25/12/2021  19.15    <DIR>          Favorites
+20/12/2022  19.48    <DIR>          Games
+13/07/2022  12.55    <DIR>          go
+25/12/2021  19.15    <DIR>          Links
+18/04/2022  02.48    <DIR>          Music
+07/11/2022  11.29    <DIR>          notebook
+12/10/2021  14.56    <DIR>          OneDrive
+27/04/2022  11.33    <DIR>          Pictures
+20/09/2022  11.03        36.746.043 postgis_3_2_pg14.exe
+18/09/2022  13.09       328.229.552 postgresql_14.exe
+08/08/2022  14.13    <DIR>          Postman
+25/12/2021  19.15    <DIR>          Saved Games
+25/12/2021  19.15    <DIR>          Searches
+10/01/2023  00.27    <DIR>          test
+28/04/2022  08.57    <DIR>          Videos
+13/09/2022  10.32    <DIR>          VirtualBox VMs
+               3 File(s)    364.975.634 bytes
+              31 Dir(s)  18.646.409.216 bytes free
+
+12. C:\Users\DWG>del test
+C:\Users\DWG\test\*, Are you sure (Y/N)? y
+
+13.C:\Users\DWG>arp -a
+
+Interface: 10.10.10.1 --- 0x8
+  Internet Address      Physical Address      Type
+  10.10.10.255          ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+Interface: 192.168.1.28 --- 0xe
+  Internet Address      Physical Address      Type
+  192.168.1.1           90-55-de-f4-86-10     dynamic
+  192.168.1.6           b4-fb-e3-42-f3-6f     dynamic
+  192.168.1.7           94-90-34-80-71-45     dynamic
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+
+14. C:\Users\DWG>copy abcd.txt .\test
+        1 file(s) copied.
+
+15. C:\Users\DWG>Nslookup google.com
+Server:  UnKnown
+Address:  2001:4489:304:101::2
+
+Non-authoritative answer:
+Name:    google.com
+Addresses:  2404:6800:4003:c03::8b
+          2404:6800:4003:c03::65
+          2404:6800:4003:c03::66
+          2404:6800:4003:c03::64
+          74.125.200.138
+          74.125.200.113
+          74.125.200.102
+          74.125.200.101
+          74.125.200.139
+          74.125.200.100 
+
+16. C:\Users\DWG>tracert google.com
+
+Tracing route to google.com [2404:6800:4003:c03::8b]
+over a maximum of 30 hops:
+
+  1     1 ms     1 ms     3 ms  2001:448a:3046:7848:9255:deff:fef4:8610
+  2     7 ms     8 ms     8 ms  fd00:448a:3046:7000::1
+  3     5 ms     4 ms     2 ms  2001:4489:304:104::1
+  4     *       20 ms     *     2001:4488:0:88:0:100:a190:65
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *       31 ms    24 ms  2001:4860:1:1::d7a
+  8    38 ms    19 ms    21 ms  2404:6800:80e6::1
+  9    21 ms     *       22 ms  2001:4860:0:1::6962
+ 10    22 ms    18 ms     *     2001:4860:0:f89::11
+ 11    23 ms    23 ms    30 ms  2001:4860::c:4001:c812
+ 12    22 ms    22 ms    21 ms  2001:4860::cc:4001:1da3
+ 13     *        *        *     Request timed out.
+ 14     *        *        *     Request timed out.
+ 15     *        *        *     Request timed out.
+ 16     *        *        *     Request timed out.
+ 17     *        *        *     Request timed out.
+ 18     *        *        *     Request timed out.
+ 19     *        *        *     Request timed out.
+ 20     *        *        *     Request timed out.
+ 21     *        *        *     Request timed out.
+ 22    23 ms    22 ms    22 ms  sf-in-f139.1e100.net [2404:6800:4003:c03::8b]
+
+Trace complete.
+
+17. C:\Users\DWG>rename abcd.txt test1.txt
+
+18. C:\Users\DWG>ver
+
+Microsoft Windows [Version 10.0.19044.2364]
+
+19. C:\Users\DWG>cipher /c test1.txt
+
+ Listing C:\Users\DWG\
+ New files added to this directory will not be encrypted.
+
+U test1.txt
+
+20. C:\Users\DWG>date
+The current date is: 10/01/2023
+Enter the new date: (dd-mm-yy) 
